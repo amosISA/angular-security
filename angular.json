@@ -57,7 +57,7 @@
             "server": "src/main.server.ts",
             "outputMode": "server",
             "security": {
-              "allowedHosts": []
+              "allowedHosts": ["localhost", "127.0.0.1"]
             },
             "ssr": {
               "entry": "src/server.ts"
@@ -79,6 +79,10 @@
               ],
               "outputHashing": "all"
             },
+            "hardened": {
+              "outputHashing": "all",
+              "subresourceIntegrity": true
+            },
             "development": {
               "optimization": false,
               "extractLicenses": false,
@@ -92,6 +96,9 @@
           "configurations": {
             "production": {
               "buildTarget": "angular-security:build:production"
+            },
+            "hardened": {
+              "buildTarget": "angular-security:build:hardened"
             },
             "development": {
               "buildTarget": "angular-security:build:development"

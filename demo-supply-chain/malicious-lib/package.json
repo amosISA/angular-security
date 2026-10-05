@@ -1,0 +1,10 @@
+{
+  "name": "malicious-lib",
+  "version": "1.0.1",
+  "description": "Harmless stand-in for a compromised transitive dependency. Proves arbitrary code execution on install; steals nothing.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "preinstall": "node preinstall.js"
+  }
+}

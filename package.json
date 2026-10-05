@@ -5,9 +5,11 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:hardened": "ng build --configuration hardened",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:angular-security": "node dist/angular-security/server/server.mjs"
+    "serve:ssr": "node dist/angular-security/server/server.mjs",
+    "serve:ssr:hardened": "HARDENED=1 node dist/angular-security/server/server.mjs",
+    "demo:supply-chain": "bash demo-supply-chain/run.sh"
   },
   "private": true,
   "packageManager": "pnpm@10.28.0",
@@ -20,8 +22,11 @@
     "@angular/platform-server": "^22.1.0",
     "@angular/router": "^22.1.0",
     "@angular/ssr": "^22.1.6",
+    "@shikijs/langs": "^4.4.3",
+    "@shikijs/themes": "^4.4.3",
     "express": "^5.1.0",
     "rxjs": "~7.8.0",
+    "shiki": "^4.4.3",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
