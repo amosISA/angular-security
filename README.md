@@ -3,6 +3,12 @@
 An interactive Angular security lab with safe, versioned examples of common vulnerability classes.
 This is not — and cannot be — a list of every possible Angular vulnerability.
 
+## Main article
+
+This repository is the interactive companion to [Angular sanitises by default. Here is where that sentence runs out.](https://www.codigotipado.com/p/angular-sanitises-by-default-here)
+
+Read the article for the complete explanation, then use this lab to inspect the examples and security boundaries in a real Angular application.
+
 ## Live demo
 
 [Open the Angular Security Lab](https://amosisa.github.io/angular-security/)
